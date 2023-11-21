@@ -1,0 +1,21 @@
+{
+    "name": "FileUploader",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": [
+        "storage",
+        "scripting"
+    ],
+    "content_security_policyx`x`": {
+        "extension_pages": "script-src 'self'; object-src 'self'",
+        "script-src": [
+            "https://sdk.amazonaws.com"
+        ]
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "popup.html"
+    }
+}
